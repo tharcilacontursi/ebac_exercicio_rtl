@@ -3,7 +3,7 @@ import '@testing-library/jest-dom/extend-expect';
 import PostComments from '../';  
 
 describe('Teste para o componente PostComments', () => {
-    it('Deve permitir adicionar dois comentários', () => {
+    test('Deve permitir adicionar dois comentários', () => {
         render(<PostComments />);
 
         const textarea = screen.getByTestId('comment-input');
